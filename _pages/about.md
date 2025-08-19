@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: UBC MBAN 26 | Grad @ HKUST Business School in Info Syst. & Finance | Web 3 Enterpreneurer
 
@@ -30,7 +30,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-## 👋 About Me
+## About Me
 
 I’m **Regan C.H. Yin**, an aspiring **business analytics professional** with a robust cross-functional background in **data science**, **finance**, and **entrepreneurship**.
 
@@ -40,7 +40,7 @@ Previously, I completed a **BBA in Information Systems and Finance** with a spec
 
 ---
 
-### 💼 Professional Experience
+### Professional Experience
 
 - **Summer Analyst @ HKEX (Hong Kong Exchanges & Clearing Ltd.)**
   - Designed real-time dashboards for senior executives using live data feeds.
@@ -59,7 +59,7 @@ Previously, I completed a **BBA in Information Systems and Finance** with a spec
 
 ---
 
-### 📊 Projects & Research
+### Projects & Research
 
 - **Insider Behavior Detection in Earnings Calls**  
   Developed a **multi-modal analytics framework** combining **FinBERT**, **WhisperX**, and **yFinance** for identifying sentiment anomalies in earnings calls. Applied **Granger causality** and event study methodology to link executive tone with abnormal stock returns.
@@ -72,7 +72,7 @@ Previously, I completed a **BBA in Information Systems and Finance** with a spec
 
 ---
 
-### 🧠 Skills
+### Skills
 
 - **Technical**: Python, SQL, Tableau, Excel, Bloomberg, Linux, Whisper, FinBERT, HuggingFace, yFinance, GridSearchCV, Scikit-learn, PyAudioAnalysis
 - **Domain**: Financial Markets, Risk Analytics, Predictive Modeling, Healthcare Data, Public Policy
