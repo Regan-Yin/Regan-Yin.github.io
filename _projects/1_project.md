@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Detecting Insider Signals - Multi-Modal Analysis of Executive Behavior in Earnings Calls
+description: NLP/FinBert/WhisperX/Business Analysis/Big Data/Machine Learning
 img: assets/img/12.jpg
 importance: 1
 category: work
