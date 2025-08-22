@@ -10,14 +10,21 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "A growing collection of my cool projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-repositories",
+          title: "Repositories",
+          description: "A quick glance of my previous project&#39;s code",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -50,9 +57,9 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+            },},{id: "projects-detecting-insider-signals-multi-modal-analysis-of-executive-behavior-in-earnings-calls",
+          title: 'Detecting Insider Signals - Multi-Modal Analysis of Executive Behavior in Earnings Calls',
+          description: "NLP/FinBert/WhisperX/Business Analysis/Big Data/Machine Learning",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
