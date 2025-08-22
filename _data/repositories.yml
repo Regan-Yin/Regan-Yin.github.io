@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Regan-Yin
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Regan-Yin/us_2022_house_election
+  - Regan-Yin/Predictive_Models_for_Heart_Disease_Diagnosis
+  - Regan-Yin/Earning_Calls_AnalysisEarning_Calls_Analysis

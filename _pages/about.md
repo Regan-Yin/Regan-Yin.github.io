@@ -44,38 +44,38 @@ Previously, I completed a **BBA in Information Systems and Finance** with a spec
 
 - **Summer Analyst @ HKEX (Hong Kong Exchanges & Clearing Ltd.)**
   - Designed real-time dashboards for senior executives using live data feeds.
-  - Built the team’s first **client monitoring system** integrated with actionable analytics.
-  - Conducted strategic analyses on **Mainland A-share** and **GDR** markets.
+  - Built the team’s first `client monitoring system` integrated with actionable analytics.
+  - Conducted strategic analyses on `Mainland A-share` and `GDR` markets.
 
 - **Equity Intern @ CCB International Asset Management**
-  - Applied **NLP sentiment analysis** on financial news to support investment insights.
-  - Evaluated the SPAC market under new regulatory environments.
-  - Produced **industry outlook reports** for the semiconductor sector.
+  - Applied `NLP sentiment analysis` on financial news to support investment insights.
+  - Evaluated the `SPAC market` under new regulatory environments.
+  - Produced `industry outlook reports` for the semiconductor sector.
 
 - **Co-Founder & CFO @ DecenPay (dpAuth)**
-  - Spearheaded the creation of a **DLT-based authentication ecosystem** used in HR and logistics.
-  - Secured over **HKD$200K** in early-stage funding from **HKSTP** and **CityU**.
-  - Negotiated **Federated Learning** licensing with universities for privacy-preserving analytics.
+  - Spearheaded the creation of a `DLT-based authentication ecosystem` used in HR and logistics.
+  - Secured over **HKD$200K** in early-stage funding from HKSTP and CityU.
+  - Negotiated `Federated Learning` licensing with universities for privacy-preserving analytics.
 
 ---
 
 ### Projects & Research
 
 - **Insider Behavior Detection in Earnings Calls**  
-  Developed a **multi-modal analytics framework** combining **FinBERT**, **WhisperX**, and **yFinance** for identifying sentiment anomalies in earnings calls. Applied **Granger causality** and event study methodology to link executive tone with abnormal stock returns.
+  Developed a `multi-modal analytics framework` combining `FinBERT`, `WhisperX`, and `yFinance` for identifying sentiment anomalies in earnings calls. Applied `Granger causality` and event study methodology to link executive tone with abnormal stock returns.
 
 - **Heart Disease Prediction via Machine Learning**  
-  Built multiple ML models (Logistic Regression, KNN, Naïve Bayes) using the **BRFSS 2020 dataset**, incorporating **cost-sensitive thresholds**, achieving high recall for identifying high-risk individuals.
+  Built multiple ML models (Logistic Regression, KNN, Naïve Bayes) using the BRFSS 2020 dataset, incorporating `cost-sensitive thresholds`, achieving high recall for identifying high-risk individuals.
 
 - **US 2022 House Election Visualization**  
-  Created a comprehensive **time-series dashboard** mapping electoral outcomes with polling, demographic, and turnout data. Demonstrated advanced **data storytelling** using Python and geopandas.
+  Created a comprehensive time-series dashboard mapping electoral outcomes with polling, demographic, and turnout data. Demonstrated advanced `data storytelling` using Python and geopandas.
 
 ---
 
 ### Skills
 
-- **Technical**: Python, SQL, Tableau, Excel, Bloomberg, Linux, Whisper, FinBERT, HuggingFace, yFinance, GridSearchCV, Scikit-learn, PyAudioAnalysis
-- **Domain**: Financial Markets, Risk Analytics, Predictive Modeling, Healthcare Data, Public Policy
-- **Soft Skills**: Strategic Communication, Cross-cultural Collaboration, Presentation, Leadership, Entrepreneurial Thinking
+- `Technical`: Python, SQL, Tableau, Excel, Bloomberg, Linux, Whisper, FinBERT, HuggingFace, yFinance, GridSearchCV, Scikit-learn, PyAudioAnalysis
+- `Domain`: Financial Markets, Risk Analytics, Predictive Modeling, Healthcare Data, Public Policy
+- `Soft Skills`: Strategic Communication, Cross-cultural Collaboration, Presentation, Leadership, Entrepreneurial Thinking
 
 
