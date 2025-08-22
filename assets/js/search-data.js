@@ -57,9 +57,9 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-detecting-insider-signals-multi-modal-analysis-of-executive-behavior-in-earnings-calls",
-          title: 'Detecting Insider Signals - Multi-Modal Analysis of Executive Behavior in Earnings Calls',
-          description: "NLP/FinBert/WhisperX/Business Analysis/Big Data/Machine Learning",
+            },},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
