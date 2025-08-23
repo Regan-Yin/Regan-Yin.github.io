@@ -1,5 +1,5 @@
 {
-  "BASICS": {
+  "basics": {
     "name": "Regan Yin",
     "label": "UBC MBAN '26 | Grad @ HKUST Business School in Info Syst. & Finance | Web 3 Enterpreneurer | Business Analyst | Ivestment Banking | Data Science Enthusiast",
     "image": "",
@@ -21,7 +21,7 @@
       }
     ]
   },
-  "WORK": [
+  "work": [
     {
       "name": "Hong Kong Exchanges and Clearing Limited (HKEX)",
       "position": "Summer Analyst, Global Issuer Service, Markets Division",
@@ -48,7 +48,7 @@
       ]
     }
   ],
-  "PERSONAL ACHIEVEMENT": [
+  "personal achievement": [
     {
       "organization": "DecenPay Limited",
       "position": "Co-Founder & CFO",
@@ -62,7 +62,7 @@
       ]
     }
   ],
-  "EDUCATION": [
+  "education": [
     {
       "institution": "University of British Columbia (UBC)",
       "location": "Vancouver, British Columbia, Canada",
@@ -104,7 +104,7 @@
       "Mergers, Acquisitions, and Corporate Restructuring"]
     }
   ],
-  "SKILLS": [
+  "skills": [
     {
       "name": "Accounting & Finance",
       "level": "",
@@ -206,7 +206,7 @@
       ]
     }
   ],
-  "LANGUAGES": [
+  "language": [
     {
       "language": "Cantonese",
       "fluency": "Native speaker",
@@ -228,7 +228,7 @@
       "icon": "fa-solid fa-language-hiragana"
     }
   ],
-  "EXTRACURRICULAR ACTIVITIES & CERTIFICATES": [
+  "extracurricular activities & certificates": [
     {
       "name": "Hong Kong Securities and Investment Institution (HKSI) | SFC LE Paper 1",
       "date": "2021-04-29",
@@ -236,7 +236,7 @@
       "icon": "fa-solid fa-certificate"
     }
   ],
-  "Interest": [
+  "interest": [
     {
       "name": "Data Science",
       "icon": "fa-solid fa-server",
