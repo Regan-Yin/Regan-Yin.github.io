@@ -194,7 +194,7 @@
     {
       "name": "Machine Learning",
       "level": "",
-      "icon": "fa-brands fa-stackoverflow",
+      "icon": "fa-brands fa-stack-overflow",
       "keywords": [
         "Linear/Lasso Regression",
         "Logistic/ Regression",
@@ -220,19 +220,38 @@
     {
       "language": "English",
       "fluency": "Fluent",
-      "icon": "alphabet-latin"
+      "icon": "fa-solid fa-earth-americas"
     },
     {
       "language": "Japanese",
       "fluency": "Basic",
-      "icon": "fa-solid fa-language-hiragana"
+      "icon": "fa-solid fa-earth-asia"
     }
   ],
-  "extracurricular activities & certificates": [
+    "awards": [
+    {
+      "title": "ACCA Hong Kong Business Competition 2023 - Best Budgeting Award, Merit Award",
+      "date": "2023-12",
+      "awarder": "ACCA (Hong Kong)",
+      "keywords": [
+        "Surpassed over 200 APAC teams as a Top 9 Finalist, emphasizing strategic insight and financial acumen.",
+        "Launched innovative budgeting and financial strategies, vital for the target startup's growth trajectory."
+      ]
+    },
+    {
+      "title": "CFA Institute Research Challenge 2022-23 | Hong Kong Finalist ",
+      "date": "2023-02",
+      "awarder": "CFA Society Hong Kong",
+      "keywords": [
+        "Utilized several financial data analytic terminals such as Refinitiv and Bloomberg to analyze the macro and industry overview via analyst reports, market history data, and macroeconomic statistics."
+      ]
+    }
+  ],
+  "certificates": [
     {
       "name": "Hong Kong Securities and Investment Institution (HKSI) | SFC LE Paper 1",
-      "date": "2021-04-29",
-      "issuer": "ISACA",
+      "date": "2023-02",
+      "issuer": "HKSI",
       "icon": "fa-solid fa-certificate"
     }
   ],
