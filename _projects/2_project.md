@@ -59,8 +59,6 @@ related_publications: false
 </style>
 
 <div class="proj-wrapper">
-
-  <h1 class="mb-2">U.S. House Election Data Visualisation (2022)</h1>
   <p class="lead">
     <strong>Author:</strong> Regan C.H. Yin &nbsp; | &nbsp; <strong>Special thanks:</strong> Andy Chan, Daniel Lau<br>
     An interactive analytics tool that lets users explore the 2022 U.S. House election at state and district levels.
