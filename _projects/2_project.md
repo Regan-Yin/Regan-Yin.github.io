@@ -1,81 +1,214 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: U.S. House Election Data Visualisation Project
+description: US Election/Data Analytics/Data Visualisation/Web Scrapping/Web App with Dash/Beautiful Soup/Selenium
+img: assets/img/us-house.jpg
 importance: 2
 category: work
-giscus_comments: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<style>
+  .proj-wrapper{max-width:1100px;margin:0 auto}
+  .lead{font-size:1.05rem;line-height:1.6}
+  .badge-pill{display:inline-block;padding:.35rem .6rem;border-radius:2rem;background:#f2f2f2;margin:.15rem .2rem;font-size:.85rem}
+  .section{margin:2.2rem 0}
+  .code{background:#0b0f19;color:#e8e8e8;border-radius:.6rem;padding:1rem 1.2rem;overflow:auto;font-size:.9rem}
+  .kpi{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0 1.25rem}
+  .kpi .card{flex:1 1 180px;background:#fafafa;border:1px solid #eee;border-radius:.75rem;padding:.9rem}
+  .muted{color:#666}
+  figure img{max-width:100%;height:auto;border-radius:.75rem;box-shadow:0 6px 18px rgba(0,0,0,.07)}
+  figure figcaption{color:#666;font-size:.9rem;margin-top:.4rem}
+  .toc a{display:block;padding:.2rem 0}
+</style>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<div class="proj-wrapper">
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+  <h1 class="mb-2">U.S. House Election Data Visualisation (2022)</h1>
+  <p class="lead">
+    <strong>Author:</strong> Regan C.H. Yin &nbsp; | &nbsp; <strong>Special thanks:</strong> Andy Chan, Daniel Lau<br>
+    An interactive analytics tool that lets users explore the 2022 U.S. House election at state and district levels.
+    It combines robust <em>web scraping</em> (Selenium + BeautifulSoup), <em>data processing</em> (Pandas) and <em>visualisation</em> (Dash + Plotly).
+  </p>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="toc section">
+    <h3>Contents</h3>
+    <a href="#executive-summary">Executive Summary</a>
+    <a href="#stack">Tech Stack & Roles</a>
+    <a href="#objectives">Objectives</a>
+    <a href="#procedure">Code Writing Procedure (End-to-End)</a>
+    <a href="#outcomes">Final Outcomes</a>
+    <a href="#reflections">Reflections & Next Steps</a>
+    <a href="#run">How to Run Locally</a>
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
 
-{% endraw %}
+  <figure class="section">
+    <img src="{{ '/assets/img/Capscreen_of_Dash.png' | relative_url }}" alt="US House 2022 interactive dashboard screenshot">
+    <figcaption>Interactive Dash app: Choropleth map + party vote distributions + district winners.</figcaption>
+  </figure>
+
+  <div id="executive-summary" class="section">
+    <h2>Executive Summary</h2>
+    <div class="kpi">
+      <div class="card"><div class="muted">Scope</div><div><strong>US House 2022</strong></div></div>
+      <div class="card"><div class="muted">Total Seats</div><div><strong>435</strong></div></div>
+      <div class="card"><div class="muted">Headline</div><div><strong>R 222 · D 213</strong></div></div>
+      <div class="card"><div class="muted">Interactivity</div><div><strong>Hover/Filter &amp; Linked Charts</strong></div></div>
+    </div>
+    <p class="lead">
+      The project delivers a clean, performant dashboard to compare party performance, vote distributions and district-level winners.
+      It automates data ingestion from public election pages, cleans and aggregates results, then renders them in an
+      intuitive interface suitable for analysts and the general public alike.
+    </p>
+  </div>
+
+  <div id="stack" class="section">
+    <h2>Tech Stack &amp; Roles</h2>
+    <span class="badge-pill">Python</span>
+    <span class="badge-pill">Selenium</span>
+    <span class="badge-pill">BeautifulSoup</span>
+    <span class="badge-pill">Pandas</span>
+    <span class="badge-pill">Dash (JupyterDash)</span>
+    <span class="badge-pill">Plotly Express</span>
+    <p class="muted mt-2">End-to-end by Regan: scraping, data engineering, visual design, and app integration.</p>
+  </div>
+
+  <div id="objectives" class="section">
+    <h2>Objectives</h2>
+    <ul>
+      <li>Provide a user-friendly, interactive view of the 2022 U.S. House election.</li>
+      <li>Enable state &amp; district-level comparisons of winners and voting patterns.</li>
+      <li>Demonstrate a full pipeline: scraping → cleaning → feature engineering → dashboard.</li>
+    </ul>
+  </div>
+
+  <div id="procedure" class="section">
+    <h2>Code Writing Procedure (End-to-End)</h2>
+
+    <h3>Part I — Web Scraping</h3>
+    <p><strong>Libraries:</strong> <code>selenium</code>, <code>bs4</code> (BeautifulSoup), <code>webdriver_manager</code>, <code>pandas</code>.</p>
+    <ol>
+      <li><strong>Driver setup.</strong> Configure Chrome with lightweight options, initialise <code>webdriver.Chrome()</code>.</li>
+      <li><strong>State mapping.</strong> Define a <code>state_dict</code> of full state names → USPS codes.</li>
+      <li><strong>Core function.</strong> Implement <code>get_election_data(driver, state)</code>:
+        <ul>
+          <li>Parse page source via BeautifulSoup.</li>
+          <li>Handle two layouts: multi-district vs single-district states.</li>
+          <li>Extract <em>district</em>, <em>candidate</em>, <em>party</em>, <em>incumbent</em>, <em>votes</em>, <em>percent</em>.</li>
+          <li>Normalise party labels (R/D/Ind./Libertarian/Green).</li>
+        </ul>
+      </li>
+      <li><strong>State enumeration.</strong> Visit the index page to collect the 50 state links, then iterate each state’s House page; click “expand” buttons when present to reveal all candidates.</li>
+      <li><strong>Tabular output.</strong> Convert nested lists → <code>DataFrame</code> with columns:
+        <em>State</em>, <em>State Code</em>, <em>District</em>, <em>Party</em>, <em>Candidate</em>, <em>Incumbent</em>, <em>Vote</em>, <em>Pct%</em>;
+        persist to <code>house.csv</code>.</li>
+    </ol>
+
+    <div class="code"><pre><code class="language-python"># sketch of the core scraping pieces
+from selenium import webdriver
+from bs4 import BeautifulSoup
+import pandas as pd
+
+state_dict = {"Alabama":"AL", "Alaska":"AK", ...}
+
+def get_election_data(driver, state):
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    result = []
+    # handle multi- and single-district layouts, normalise parties & incumbency
+    # append rows: [state, state_code, district, party, name, incumbent, votes, pct]
+    return result
+
+# build state list from index, loop each state house page, click expand when present
+rows = []
+for state in state_list:
+    driver.get(f"https://www.politico.com/2022-election/results/{state.lower().replace(' ','-')}/house/")
+    rows += get_election_data(driver, state)
+
+house = pd.DataFrame(rows, columns=["State","State Code","District","Party","Candidate","Incumbent","Vote","Pct%"])
+house.to_csv("house.csv", index=False)</code></pre></div>
+
+    <h3>Part II — Data Cleaning &amp; Feature Engineering</h3>
+    <ul>
+      <li>Sanitise numeric fields: remove commas; coerce <code>Vote</code> to <code>int</code>, <code>Pct%</code> to <code>float</code> (0–1).</li>
+      <li>For each state: compute <em>Total Seats</em>, <em>Total Votes</em>, <em>Won Seats</em> (Republican seat count), party vote sums, and <em>Rep. Won Seats %</em>; infer <em>Won Party</em>.</li>
+      <li>Output an aggregated <code>seat_won</code> table for the map + summary charts.</li>
+    </ul>
+
+    <div class="code"><pre><code class="language-python">import pandas as pd
+house = pd.read_csv("house.csv")
+house["Vote"] = pd.to_numeric(house["Vote"].str.replace(",",""), errors="coerce").dropna().astype(int)
+house["Pct%"] = house["Pct%"].str.rstrip("%").astype(float)/100.0
+
+seat_rows = []
+for (state, code), g in house.groupby(["State","State Code"]):
+    total_seats = g["District"].nunique()
+    total_votes = g["Vote"].sum()
+    won_seats = sum(g.groupby("District").apply(lambda x: x.loc[x["Pct%"].idxmax(),"Party"])=="Republican")
+    republican_votes = g.loc[g["Party"]=="Republican","Vote"].sum()
+    democratic_votes = g.loc[g["Party"]=="Democratic","Vote"].sum()
+    libertarian_votes = g.loc[g["Party"].str.contains("Libertarian", na=False),"Vote"].sum()
+    seat_rows.append({
+        "State":state,"State Code":code,"Total Seats":total_seats,"Total Votes":total_votes,
+        "Won Seats":won_seats,"Republican Votes":republican_votes,"Democratic Votes":democratic_votes,
+        "Libertarian Votes":libertarian_votes,"Rep. Won Seats %":round(won_seats/total_seats*100,2),
+        "Won Party":"Republican" if won_seats > total_seats/2 else "Democratic"
+    })
+seat_won = pd.DataFrame(seat_rows)</code></pre></div>
+
+    <h3>Part III — Dash App (Map + Linked Charts)</h3>
+    <ul>
+      <li><strong>Layout:</strong> Title, KPI line (435 seats; R 222 / D 213), USA choropleth (state code), and two right-hand panels:
+        party vote distribution &amp; district winner bars, both responding to map hover.</li>
+      <li><strong>Top/Bottom 25:</strong> Radio selector renders ranked bar charts for % of Republican seats.</li>
+      <li><strong>Callbacks:</strong> one for map hover → updates two panels; one for the Top/Bottom toggle.</li>
+    </ul>
+
+    <div class="code"><pre><code class="language-python">from jupyter_dash import JupyterDash
+from dash import html, dcc, Input, Output
+import plotly.express as px
+
+app = JupyterDash(__name__)
+app.layout = html.Div([...])  # map + linked charts + toggle
+
+@app.callback(
+    [Output("choropleth_map","figure"), Output("bar_chart","figure"), Output("district_bar_chart","figure")],
+    Input("choropleth_map","hoverData")
+)
+def update_panels(hover):
+    # build map from seat_won; when hovering a state, slice seat_won & house
+    # return: map fig, party vote bar, district winner bar
+    ...
+
+@app.callback(Output("top-bottom-25-bar-chart","figure"), Input("toggle-chart","value"))
+def update_top_bottom(sel):
+    # select nlargest/nsmallest on 'Rep. Won Seats %', render bar chart
+    ...</code></pre></div>
+  </div>
+
+  <div id="outcomes" class="section">
+    <h2>Final Outcomes</h2>
+    <ul>
+      <li>Fully working, interactive dashboard with linked views (map ↔ state &amp; district panels).</li>
+      <li>Cleaned dataset (<code>house.csv</code>) and engineered summary table (<code>seat_won</code>).</li>
+      <li>Insight surfaces: party dominance by state, competitiveness, and distribution of winners across districts.</li>
+    </ul>
+  </div>
+
+  <div id="reflections" class="section">
+    <h2>Reflections &amp; Next Steps</h2>
+    <p><strong>What went well:</strong> Reliable scraping across heterogeneous layouts; concise visual grammar; responsive callbacks.</p>
+    <p><strong>Challenges:</strong> Dynamic pages &amp; sporadic missing party tags required defensive parsing; hover-driven UX needed careful defaults.</p>
+    <p><strong>Roadmap:</strong> Add Senate/Presidential modules; deploy Dash app to a managed host; integrate trendlines and forecasting.</p>
+  </div>
+
+  <div id="run" class="section">
+    <h2>How to Run Locally</h2>
+    <ol>
+      <li>Create and activate a Python 3.10+ environment.</li>
+      <li><code>pip install selenium webdriver-manager beautifulsoup4 pandas jupyter-dash dash plotly</code></li>
+      <li>Run the scraper to produce <code>house.csv</code>, then start the Dash app (JupyterDash or pure Dash).</li>
+      <li>Open the served URL (e.g., <code>http://127.0.0.1:805x</code>).</li>
+    </ol>
+  </div>
+
+</div>
