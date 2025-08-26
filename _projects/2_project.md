@@ -20,6 +20,42 @@ related_publications: false
   figure img{max-width:100%;height:auto;border-radius:.75rem;box-shadow:0 6px 18px rgba(0,0,0,.07)}
   figure figcaption{color:#666;font-size:.9rem;margin-top:.4rem}
   .toc a{display:block;padding:.2rem 0}
+  
+  /* Adaptive tokens */
+  :root{
+    --kpi-card-bg: #ffffff;
+    --kpi-card-border: #e5e7eb;
+    --kpi-muted: #6b7280;
+    --badge-bg: rgba(0,0,0,.04);
+    --badge-border: rgba(0,0,0,.08);
+  }
+  [data-theme="dark"]{
+    --kpi-card-bg: #0f172a;     /* slate-900 */
+    --kpi-card-border: #233047; /* darker border */
+    --kpi-muted: #94a3b8;       /* slate-400 */
+    --badge-bg: rgba(255,255,255,.08);
+    --badge-border: rgba(255,255,255,.12);
+  }
+
+  /* KPI cards */
+  .kpi{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0 1.25rem}
+  .kpi .card{
+    flex:1 1 180px;
+    background:var(--kpi-card-bg);
+    border:1px solid var(--kpi-card-border);
+    border-radius:.75rem;
+    padding:.9rem;
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+    color:var(--global-text-color);
+  }
+  .kpi .card .muted{color:var(--kpi-muted)}
+
+  /* Tech stack badges */
+  .badge-pill{
+    display:inline-block;padding:.35rem .6rem;border-radius:2rem;
+    background:var(--badge-bg);border:1px solid var(--badge-border);
+    margin:.15rem .2rem;font-size:.85rem;color:var(--global-text-color);
+  }
 </style>
 
 <div class="proj-wrapper">
