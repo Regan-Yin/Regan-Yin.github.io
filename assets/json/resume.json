@@ -65,7 +65,7 @@
   "education": [
     {
       "institution": "University of British Columbia (UBC)",
-      "location": "Vancouver, British Columbia, Canada",
+      "location": "Vancouver, BC, Canada",
       "url": "https://www.ubc.ca/",
       "area": "Business Analytics",
       "studyType": "Master of Business Analytics",
@@ -92,7 +92,7 @@
     },
     {
       "institution": "University of Illinois at Urbana-Champaign (UIUC)",
-      "location": "Champaign, Illinois, United States",
+      "location": "Champaign, Illinois, US",
       "url": "https://illinois.edu/",
       "area": "Finance",
       "studyType": "Fall 2023 Exchange",
