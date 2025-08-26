@@ -108,7 +108,7 @@
     {
       "name": "Accounting & Finance",
       "level": "",
-      "icon": "fa-solid fa-report-money",
+      "icon": "fa-solid fa-money-bill-trend-up",
       "keywords": [
         "Corporate Finance",
         "Financial Analysis",
@@ -155,7 +155,7 @@
     {
       "name": "Data Analytics",
       "level": "",
-      "icon": "fa-solid fa-hashtag",
+      "icon": "fa-solid fa-chart-diagram",
       "keywords": [
         "MS Excel",
         "pandas", 
@@ -169,7 +169,7 @@
     {
       "name": "Data Visualization",
       "level": "",
-      "icon": "fa-solid fa-hashtag",
+      "icon": "fa-solid fa-chart-column",
       "keywords": [
         "Tableau",
         "Power BI",
@@ -181,7 +181,7 @@
     {
       "name": "Programming",
       "level": "",
-      "icon": "fa-solid fa-brand-python",
+      "icon": "fa-brands fa-python",
       "keywords": [
         "Python",
         "Linux",
@@ -194,7 +194,7 @@
     {
       "name": "Machine Learning",
       "level": "",
-      "icon": "fa-solid fa-brand-stackoverflow",
+      "icon": "fa-brands fa-stackoverflow",
       "keywords": [
         "Linear/Lasso Regression",
         "Logistic/ Regression",
@@ -206,7 +206,7 @@
       ]
     }
   ],
-  "language": [
+  "languages": [
     {
       "language": "Cantonese",
       "fluency": "Native speaker",
@@ -236,7 +236,7 @@
       "icon": "fa-solid fa-certificate"
     }
   ],
-  "interest": [
+  "interests": [
     {
       "name": "Data Science",
       "icon": "fa-solid fa-server",
