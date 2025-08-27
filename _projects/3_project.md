@@ -41,9 +41,6 @@ category: work
 </style>
 
 <div class="wrap">
-  <p class="muted">Course: ISOM 3360 · Team: SHI Yushan, CHEN Jinghui, LUK Yin Lee, YIN Chakhei</p>
-
-  <h1>Predictive Models for Heart Disease Diagnosis</h1>
   <p class="lead">
     An end-to-end ML pipeline to predict heart disease using the 2020 BRFSS dataset:
     data understanding & preprocessing, model selection (Decision Tree, Logistic Regression, KNN, Naïve Bayes),
