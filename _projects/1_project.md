@@ -8,7 +8,6 @@ category: work
 related_publications: false
 ---
 
-<h1>Multi-Modal Sentiment Analysis of Earnings Calls</h1>
 <p><strong>Author:</strong> Regan Yin<br>
 <strong>Acknowledgment:</strong> Special thanks to Prof. Yi Yang (HKUST ISOM) for supporting the FinBERT fine-tuning and providing valuable model insights.</p>
 <hr>

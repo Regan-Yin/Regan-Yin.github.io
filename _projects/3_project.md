@@ -8,36 +8,43 @@ category: work
 ---
 
 <style>
-  /* Page-only theming that adapts to al-folio's light/dark toggle */
+  /* ---- Page-only theming, adapts to al-folio dark mode ---- */
   :root{
-    --card-bg: #ffffff;
-    --card-border: #e5e7eb;
-    --muted: #6b7280;
-    --badge-bg: rgba(0,0,0,.04);
-    --badge-border: rgba(0,0,0,.08);
+    --card-bg:#ffffff; --card-border:#e5e7eb; --muted:#6b7280;
+    --badge-bg:rgba(0,0,0,.04); --badge-border:rgba(0,0,0,.08);
   }
   [data-theme="dark"]{
-    --card-bg: #0f172a;
-    --card-border: #233047;
-    --muted: #94a3b8;
-    --badge-bg: rgba(255,255,255,.08);
-    --badge-border: rgba(255,255,255,.12);
+    --card-bg:#0f172a; --card-border:#233047; --muted:#94a3b8;
+    --badge-bg:rgba(255,255,255,.08); --badge-border:rgba(255,255,255,.12);
   }
+
+  /* ---- Layout & spacing (prevents overlaps) ---- */
   .wrap{max-width:1100px;margin:0 auto}
-  .lead{font-size:1.05rem;line-height:1.6}
+  .section{margin:2rem 0; position:relative;}
+  .section::after{content:""; display:block; clear:both;} /* safety clear */
+  .lead{font-size:1.05rem;line-height:1.7}
   .muted{color:var(--muted)}
   .badge{display:inline-block;padding:.35rem .6rem;border-radius:2rem;background:var(--badge-bg);border:1px solid var(--badge-border);margin:.15rem .2rem;font-size:.85rem}
-  .section{margin:2rem 0}
   .kpi{display:flex;gap:1rem;flex-wrap:wrap}
   .kpi .card{flex:1 1 220px;background:var(--card-bg);border:1px solid var(--card-border);border-radius:.75rem;padding:1rem;box-shadow:0 2px 12px rgba(0,0,0,.06)}
-  figure img{max-width:100%;height:auto;border-radius:.75rem;box-shadow:0 6px 18px rgba(0,0,0,.08)}
-  figure figcaption{color:var(--muted);font-size:.9rem;margin-top:.4rem}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
-  .code{background:#0b0f19;color:#e8e8e8;border-radius:.6rem;padding:1rem 1.2rem;overflow:auto;font-size:.9rem}
-  pre{margin:0}
-  .toc a{display:block;padding:.2rem 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+
+  /* ---- Media: figures never overlap ---- */
+  figure{margin:0}
+  figure img{display:block; width:100%; height:auto; max-width:100%;
+    border-radius:.75rem; box-shadow:0 6px 18px rgba(0,0,0,.08)}
+  figure figcaption{color:var(--muted);font-size:.9rem;margin-top:.5rem; word-break:break-word}
+
+  /* ---- Code blocks: self-contained, scrollable, no overlay ---- */
+  .code{background:#0b0f19;color:#e8e8e8;border-radius:.6rem;padding:1rem 1.2rem;
+    overflow:auto; /* horizontal scroll if needed */
+    font-size:.9rem; line-height:1.5; box-shadow:0 4px 16px rgba(0,0,0,.18)}
+  pre{margin:0; white-space:pre; overflow:auto}
+  code{word-break:normal}
+
+  /* Tables */
   table{width:100%;border-collapse:collapse;font-size:.95rem}
-  th,td{padding:.5rem .6rem;border-bottom:1px solid var(--card-border)}
+  th,td{padding:.6rem .65rem;border-bottom:1px solid var(--card-border)}
 </style>
 
 <div class="wrap">
@@ -45,25 +52,26 @@ category: work
     An end-to-end ML pipeline to predict heart disease using the 2020 BRFSS dataset:
     data understanding & preprocessing, model selection (Decision Tree, Logistic Regression, KNN, Naïve Bayes),
     hyperparameter tuning with cross-validation, and cost-sensitive decision thresholding tailored to healthcare risk.
-    Key project details and results are drawn from the final report PDF. :contentReference[oaicite:0]{index=0}
   </p>
 
-  <div class="toc section">
+  <div class="section">
     <h3>Contents</h3>
-    <a href="#executive-summary">Executive Summary</a>
-    <a href="#stack">Tech Stack & Roles</a>
-    <a href="#data">Data Preparation</a>
-    <a href="#models">Modeling & Tuning</a>
-    <a href="#threshold">Cost-Sensitive Thresholding</a>
-    <a href="#evaluation">Evaluation</a>
-    <a href="#gallery">Figure Gallery</a>
-    <a href="#code">Selected Code Snippets</a>
-    <a href="#conclusion">Conclusion & Future Work</a>
+    <ul>
+      <li><a href="#executive-summary">Executive Summary</a></li>
+      <li><a href="#stack">Tech Stack & Roles</a></li>
+      <li><a href="#data">Data Preparation</a></li>
+      <li><a href="#models">Modeling & Tuning</a></li>
+      <li><a href="#threshold">Cost-Sensitive Thresholding</a></li>
+      <li><a href="#evaluation">Evaluation</a></li>
+      <li><a href="#gallery">Figure Gallery</a></li>
+      <li><a href="#code">Selected Code Snippets</a></li>
+      <li><a href="#conclusion">Conclusion & Future Work</a></li>
+    </ul>
   </div>
 
   <figure class="section">
     <img src="{{ '/assets/img/project3_LRPRC.png' | relative_url }}" alt="Logistic Regression Precision-Recall Curve">
-    <figcaption>Precision–Recall Curve (Logistic Regression). :contentReference[oaicite:1]{index=1}</figcaption>
+    <figcaption>Precision–Recall Curve (Logistic Regression).</figcaption>
   </figure>
 
   <div id="executive-summary" class="section">
@@ -71,13 +79,13 @@ category: work
     <div class="kpi">
       <div class="card"><div class="muted">Dataset</div><div><strong>BRFSS 2020 (CDC)</strong></div></div>
       <div class="card"><div class="muted">Task</div><div><strong>Heart disease classification</strong></div></div>
-      <div class="card"><div class="muted">Split</div><div><strong>Train/Test = 60/40 (rs=42)</strong> :contentReference[oaicite:2]{index=2}</div></div>
+      <div class="card"><div class="muted">Split</div><div><strong>Train/Test = 60/40 (rs=42)</strong></div></div>
       <div class="card"><div class="muted">Objective</div><div><strong>Minimize False Negatives</strong> (Recall↑)</div></div>
-      <div class="card"><div class="muted">Best Model (post-threshold)</div><div><strong>Logistic Regression</strong> (highest recall & lowest cost) :contentReference[oaicite:3]{index=3}</div></div>
+      <div class="card"><div class="muted">Best Model (post-threshold)</div><div><strong>Logistic Regression</strong> (highest recall & lowest cost)</div></div>
     </div>
     <p class="lead">
       We build and compare four supervised models. Guided by clinical risk, we penalize false negatives
-      more heavily (FN cost 100 vs FP cost 10) and search decision thresholds that minimize total cost. :contentReference[oaicite:4]{index=4}
+      more heavily (FN cost 100 vs FP cost 10) and search decision thresholds that minimize total cost.
     </p>
   </div>
 
@@ -95,87 +103,88 @@ category: work
   <div id="data" class="section">
     <h2>Data Preparation</h2>
     <ul>
-      <li><strong>Source:</strong> CDC BRFSS 2020; target label <code>_MICHD</code> (ever reported CHD/MI). :contentReference[oaicite:5]{index=5}</li>
-      <li><strong>Cleaning:</strong> drop vars with &gt;90% nulls; handle special codes (7/9/77/98/99/777/999) by mode/mean/zero per variable type; min-max normalize numerical features; one-hot encode categoricals. :contentReference[oaicite:6]{index=6}</li>
-      <li><strong>Split:</strong> test size 40%, random_state 42. :contentReference[oaicite:7]{index=7}</li>
+      <li><strong>Source:</strong> CDC BRFSS 2020; target label <code>_MICHD</code> (ever reported CHD/MI).</li>
+      <li><strong>Cleaning:</strong> drop vars with &gt;90% nulls; handle special codes (7/9/77/98/99/777/999) by mode/mean/zero per variable type; min-max normalize numerical features; one-hot encode categoricals.</li>
+      <li><strong>Split:</strong> test size 40%, random_state 42; stratified on the target.</li>
     </ul>
     <div class="grid">
       <figure>
         <img src="{{ '/assets/img/project3_HDFreq.png' | relative_url }}" alt="Heart disease frequency">
-        <figcaption>Heart disease prevalence in sample (≈8.5%). :contentReference[oaicite:8]{index=8}</figcaption>
+        <figcaption>Heart disease prevalence in sample (≈8.5%).</figcaption>
       </figure>
       <figure>
         <img src="{{ '/assets/img/project3_HDFreqSex.png' | relative_url }}" alt="Heart disease frequency by sex">
-        <figcaption>Sex distribution & prevalence. :contentReference[oaicite:9]{index=9}</figcaption>
+        <figcaption>Sex distribution & prevalence.</figcaption>
       </figure>
     </div>
   </div>
 
   <div id="models" class="section">
     <h2>Modeling & Tuning</h2>
-    <p>We evaluate four algorithms: Decision Tree, Logistic Regression, K-Nearest Neighbors, and Naïve Bayes. Hyperparameters are tuned with 10-fold cross-validation; recall is emphasized due to clinical risk. :contentReference[oaicite:10]{index=10}</p>
+    <p>We evaluate four algorithms: Decision Tree, Logistic Regression, K-Nearest Neighbors, and Naïve Bayes. Hyperparameters are tuned with 10-fold cross-validation; recall is emphasized due to clinical risk.</p>
     <ul>
-      <li><strong>Decision Tree:</strong> tune <code>max_depth</code>, <code>max_leaf_nodes</code> (best ≈ depth=13, leaf=150). :contentReference[oaicite:11]{index=11}</li>
-      <li><strong>Logistic Regression:</strong> <code>C</code>, <code>penalty='l1'</code>, <code>solver='saga'</code>, <code>max_iter=2000</code>. :contentReference[oaicite:12]{index=12}</li>
-      <li><strong>KNN:</strong> best <code>k</code> by accuracy (k=8) to avoid k=1 overfitting. :contentReference[oaicite:13]{index=13}</li>
-      <li><strong>Naïve Bayes:</strong> limited tunables; used default Gaussian/Bernoulli form as per data encoding. :contentReference[oaicite:14]{index=14}</li>
+      <li><strong>Decision Tree:</strong> tune <code>max_depth</code>, <code>max_leaf_nodes</code> (best ≈ depth=13, leaf=150).</li>
+      <li><strong>Logistic Regression:</strong> <code>C</code>, <code>penalty='l1'</code>, <code>solver='saga'</code>, <code>max_iter=2000</code>.</li>
+      <li><strong>KNN:</strong> best <code>k</code> by accuracy (k=8) to avoid k=1 overfitting.</li>
+      <li><strong>Naïve Bayes:</strong> limited tunables; used default Gaussian/Bernoulli forms based on encoding.</li>
     </ul>
   </div>
 
   <div id="threshold" class="section">
     <h2>Cost-Sensitive Thresholding</h2>
     <p>
-      We define total cost = <code>100×FN + 10×FP</code> and search the probability threshold that minimizes it for each model.
-      Optimal thresholds found in the report: DT=0.09, LR=0.08, NB=0.08, KNN=0.01. :contentReference[oaicite:15]{index=15}
+      Total cost = <code>100×FN + 10×FP</code>. We scan thresholds in [0,1] for each model and select the minimum-cost point.
+      Optimal thresholds used: DT=0.09, LR=0.08, NB=0.08, KNN=0.01.
     </p>
     <div class="grid">
       <figure>
         <img src="{{ '/assets/img/project3_LRCostCurve.png' | relative_url }}" alt="LR cost curve">
-        <figcaption>Logistic Regression cost curve vs threshold. :contentReference[oaicite:16]{index=16}</figcaption>
+        <figcaption>Logistic Regression cost curve vs threshold.</figcaption>
       </figure>
       <figure>
         <img src="{{ '/assets/img/project3_DesTreeCostCurve.png' | relative_url }}" alt="Decision Tree cost curve">
-        <figcaption>Decision Tree cost curve vs threshold. :contentReference[oaicite:17]{index=17}</figcaption>
+        <figcaption>Decision Tree cost curve vs threshold.</figcaption>
       </figure>
       <figure>
         <img src="{{ '/assets/img/project3_NBCostCurve.png' | relative_url }}" alt="Naive Bayes cost curve">
-        <figcaption>Naïve Bayes cost curve vs threshold. :contentReference[oaicite:18]{index=18}</figcaption>
+        <figcaption>Naïve Bayes cost curve vs threshold.</figcaption>
       </figure>
       <figure>
         <img src="{{ '/assets/img/project3_KNNCostCurve.png' | relative_url }}" alt="KNN cost curve">
-        <figcaption>KNN cost curve vs threshold. :contentReference[oaicite:19]{index=19}</figcaption>
+        <figcaption>KNN cost curve vs threshold.</figcaption>
       </figure>
     </div>
   </div>
 
   <div id="evaluation" class="section">
     <h2>Evaluation</h2>
-    <p>We report Accuracy, Precision, Recall, MAE, Confusion Matrix before/after applying optimal thresholds. Post-threshold, Logistic Regression achieves the highest recall and lowest total cost among the four models. :contentReference[oaicite:20]{index=20}</p>
+    <p>We report Accuracy, Precision, Recall, MAE, and Confusion Matrix before/after applying optimal thresholds. Post-threshold, Logistic Regression achieves the highest recall and lowest total cost among the four models.</p>
     <table>
-      <thead><tr><th>Model</th><th>Opt. Threshold</th><th>Note</th></tr></thead>
+      <thead><tr><th>Model</th><th>Opt. Threshold</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td>Logistic Regression</td><td>0.08</td><td>Best recall & lowest cost (post-threshold). :contentReference[oaicite:21]{index=21}</td></tr>
-        <tr><td>Decision Tree</td><td>0.09</td><td>Competitive recall after thresholding. :contentReference[oaicite:22]{index=22}</td></tr>
-        <tr><td>Naïve Bayes</td><td>0.08</td><td>High baseline recall; cost improved with thresholding. :contentReference[oaicite:23]{index=23}</td></tr>
-        <tr><td>KNN (k=8)</td><td>0.01</td><td>Very low threshold needed; recall still trails LR. :contentReference[oaicite:24]{index=24}</td></tr>
+        <tr><td>Logistic Regression</td><td>0.08</td><td>Best recall & lowest cost (post-threshold).</td></tr>
+        <tr><td>Decision Tree</td><td>0.09</td><td>Competitive recall after thresholding.</td></tr>
+        <tr><td>Naïve Bayes</td><td>0.08</td><td>High baseline recall; cost improved with thresholding.</td></tr>
+        <tr><td>KNN (k=8)</td><td>0.01</td><td>Very low threshold needed; recall still trails LR.</td></tr>
       </tbody>
     </table>
+
     <div class="grid" style="margin-top:1rem">
       <figure>
         <img src="{{ '/assets/img/project3_LRPRC.png' | relative_url }}" alt="LR PRC">
-        <figcaption>LR Precision–Recall Curve. :contentReference[oaicite:25]{index=25}</figcaption>
+        <figcaption>LR Precision–Recall Curve.</figcaption>
       </figure>
       <figure>
         <img src="{{ '/assets/img/project3_DesTreePRC.png' | relative_url }}" alt="Decision Tree PRC">
-        <figcaption>Decision Tree Precision–Recall Curve. :contentReference[oaicite:26]{index=26}</figcaption>
+        <figcaption>Decision Tree Precision–Recall Curve.</figcaption>
       </figure>
       <figure>
         <img src="{{ '/assets/img/project3_NBPRC.png' | relative_url }}" alt="Naive Bayes PRC">
-        <figcaption>Naïve Bayes Precision–Recall Curve. :contentReference[oaicite:27]{index=27}</figcaption>
+        <figcaption>Naïve Bayes Precision–Recall Curve.</figcaption>
       </figure>
       <figure>
         <img src="{{ '/assets/img/project3_KNNPRC.png' | relative_url }}" alt="KNN PRC">
-        <figcaption>KNN Precision–Recall Curve. :contentReference[oaicite:28]{index=28}</figcaption>
+        <figcaption>KNN Precision–Recall Curve.</figcaption>
       </figure>
     </div>
   </div>
@@ -210,7 +219,6 @@ X = df.drop(columns=["_MICHD"])
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.40, random_state=42, stratify=y
 )</code></pre></div>
-    <p class="muted">Split choice matches the project report (40% test, rs=42). :contentReference[oaicite:29]{index=29}</p>
 
     <h3>Grid Search (Recall-focused)</h3>
     <div class="code"><pre><code class="language-python">from sklearn.model_selection import GridSearchCV
@@ -229,7 +237,6 @@ lr_cv = GridSearchCV(lr, lr_grid, scoring="recall", cv=10, n_jobs=-1).fit(X_trai
 knn = KNeighborsClassifier()
 knn_grid = {"n_neighbors":[3,5,8,11]}
 knn_cv = GridSearchCV(knn, knn_grid, scoring="accuracy", cv=10, n_jobs=-1).fit(X_train, y_train)  # avoid k=1 overfit</code></pre></div>
-    <p class="muted">Hyperparameter choices & CV strategy per report (recall-first; KNN by accuracy to avoid k=1). :contentReference[oaicite:30]{index=30}</p>
 
     <h3>Cost-Sensitive Threshold Search</h3>
     <div class="code"><pre><code class="language-python">import numpy as np
@@ -248,14 +255,15 @@ def min_cost_threshold(y_true, proba, fn_cost=100, fp_cost=10):
 lr_best = lr_cv.best_estimator_.fit(X_train, y_train)
 lr_proba = lr_best.predict_proba(X_test)[:,1]
 t_opt, c_min = min_cost_threshold(y_test.values, lr_proba, fn_cost=100, fp_cost=10)</code></pre></div>
-    <p class="muted">Report uses FN:100 vs FP:10 and finds optimal thresholds ~0.08–0.09 across models. :contentReference[oaicite:31]{index=31}</p>
 
     <h3>Precision–Recall Curve (example)</h3>
     <div class="code"><pre><code class="language-python">from sklearn.metrics import precision_recall_curve
 import matplotlib.pyplot as plt
 
 prec, rec, th = precision_recall_curve(y_test, lr_proba)
-plt.figure(); plt.plot(rec, prec); plt.xlabel("Recall"); plt.ylabel("Precision"); plt.title("LR PRC"); plt.show()</code></pre></div>
+plt.figure(); plt.plot(rec, prec)
+plt.xlabel("Recall"); plt.ylabel("Precision"); plt.title("LR PRC")
+plt.show()</code></pre></div>
   </div>
 
   <div id="conclusion" class="section">
@@ -264,7 +272,7 @@ plt.figure(); plt.plot(rec, prec); plt.xlabel("Recall"); plt.ylabel("Precision")
       Logistic Regression offered the best recall and lowest cost after cost-aware thresholding,
       aligning with our clinical objective to reduce missed cases. Next steps: calibrate probabilities,
       explore class-imbalance strategies (e.g., focal loss, cost-sensitive learners), and evaluate with
-      external validation cohorts to assess generalizability. :contentReference[oaicite:32]{index=32}
+      external validation cohorts to assess generalizability.
     </p>
   </div>
 </div>
