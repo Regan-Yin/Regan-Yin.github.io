@@ -2,8 +2,7 @@
 layout: page
 title: Predictive Models for Heart Disease Diagnosis
 description: Health Care/Data Mining/Logistic Regression/Data Visualization/Machine Learning/
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+img: assets/img/heart_attack_concept.jpg
 importance: 3
 category: work
 ---
