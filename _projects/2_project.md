@@ -2,7 +2,7 @@
 layout: page
 title: U.S. House Election Data Visualisation Project
 description: US Election/Data Analytics/Data Visualisation/Web Scrapping/Web App with Dash/Beautiful Soup/Selenium
-img: assets/img/us-house.jpg
+img: assets/img/US_Election/us-house.jpg
 importance: 2
 category: work
 related_publications: false
@@ -77,7 +77,7 @@ related_publications: false
   </div>
 
   <figure class="section">
-    <img src="{{ '/assets/img/Capscreen_of_Dash.png' | relative_url }}" alt="US House 2022 interactive dashboard screenshot">
+    <img src="{{ '/assets/img/US_Election/Capscreen_of_Dash.png' | relative_url }}" alt="US House 2022 interactive dashboard screenshot">
     <figcaption>Interactive Dash app: Choropleth map + party vote distributions + district winners.</figcaption>
   </figure>
 
