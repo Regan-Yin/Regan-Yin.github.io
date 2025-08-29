@@ -2,7 +2,7 @@
 layout: page
 title: Predictive Models for Heart Disease Diagnosis
 description: Health Care/Data Mining/Logistic Regression/Data Visualization/Machine Learning/
-img: assets/img/heart_attack_concept.jpg
+img: assets/img/HeartAttack/heart_attack_concept.jpg
 importance: 3
 category: work
 ---
@@ -70,7 +70,7 @@ category: work
   </div>
 
   <figure class="section">
-    <img src="{{ '/assets/img/project3_LRPRC.png' | relative_url }}" alt="Logistic Regression Precision-Recall Curve">
+    <img src="{{ '/assets/img/HeartAttack/project3_LRPRC.png' | relative_url }}" alt="Logistic Regression Precision-Recall Curve">
     <figcaption>Precision–Recall Curve (Logistic Regression).</figcaption>
   </figure>
 
@@ -109,11 +109,11 @@ category: work
     </ul>
     <div class="grid">
       <figure>
-        <img src="{{ '/assets/img/project3_HDFreq.png' | relative_url }}" alt="Heart disease frequency">
+        <img src="{{ '/assets/img/HeartAttack/project3_HDFreq.png' | relative_url }}" alt="Heart disease frequency">
         <figcaption>Heart disease prevalence in sample (≈8.5%).</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/project3_HDFreqSex.png' | relative_url }}" alt="Heart disease frequency by sex">
+        <img src="{{ '/assets/img/HeartAttack/project3_HDFreqSex.png' | relative_url }}" alt="Heart disease frequency by sex">
         <figcaption>Sex distribution & prevalence.</figcaption>
       </figure>
     </div>
@@ -138,19 +138,19 @@ category: work
     </p>
     <div class="grid">
       <figure>
-        <img src="{{ '/assets/img/project3_LRCostCurve.png' | relative_url }}" alt="LR cost curve">
+        <img src="{{ '/assets/img/HeartAttack/project3_LRCostCurve.png' | relative_url }}" alt="LR cost curve">
         <figcaption>Logistic Regression cost curve vs threshold.</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/project3_DesTreeCostCurve.png' | relative_url }}" alt="Decision Tree cost curve">
+        <img src="{{ '/assets/img/HeartAttack/project3_DesTreeCostCurve.png' | relative_url }}" alt="Decision Tree cost curve">
         <figcaption>Decision Tree cost curve vs threshold.</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/project3_NBCostCurve.png' | relative_url }}" alt="Naive Bayes cost curve">
+        <img src="{{ '/assets/img/HeartAttack/project3_NBCostCurve.png' | relative_url }}" alt="Naive Bayes cost curve">
         <figcaption>Naïve Bayes cost curve vs threshold.</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/project3_KNNCostCurve.png' | relative_url }}" alt="KNN cost curve">
+        <img src="{{ '/assets/img/HeartAttack/project3_KNNCostCurve.png' | relative_url }}" alt="KNN cost curve">
         <figcaption>KNN cost curve vs threshold.</figcaption>
       </figure>
     </div>
@@ -171,19 +171,19 @@ category: work
 
     <div class="grid" style="margin-top:1rem">
       <figure>
-        <img src="{{ '/assets/img/project3_LRPRC.png' | relative_url }}" alt="LR PRC">
+        <img src="{{ '/assets/img/HeartAttack/project3_LRPRC.png' | relative_url }}" alt="LR PRC">
         <figcaption>LR Precision–Recall Curve.</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/project3_DesTreePRC.png' | relative_url }}" alt="Decision Tree PRC">
+        <img src="{{ '/assets/img/HeartAttack/project3_DesTreePRC.png' | relative_url }}" alt="Decision Tree PRC">
         <figcaption>Decision Tree Precision–Recall Curve.</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/project3_NBPRC.png' | relative_url }}" alt="Naive Bayes PRC">
+        <img src="{{ '/assets/img/HeartAttack/project3_NBPRC.png' | relative_url }}" alt="Naive Bayes PRC">
         <figcaption>Naïve Bayes Precision–Recall Curve.</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/project3_KNNPRC.png' | relative_url }}" alt="KNN PRC">
+        <img src="{{ '/assets/img/HeartAttack/project3_KNNPRC.png' | relative_url }}" alt="KNN PRC">
         <figcaption>KNN Precision–Recall Curve.</figcaption>
       </figure>
     </div>
@@ -192,16 +192,16 @@ category: work
   <div id="gallery" class="section">
     <h2>Figure Gallery (all images)</h2>
     <div class="grid">
-      <figure><img src="{{ '/assets/img/project3_DesTreeCostCurve.png' | relative_url }}" alt="DT cost"><figcaption>project3_DesTreeCostCurve.png</figcaption></figure>
-      <figure><img src="{{ '/assets/img/project3_DesTreePRC.png' | relative_url }}" alt="DT PRC"><figcaption>project3_DesTreePRC.png</figcaption></figure>
-      <figure><img src="{{ '/assets/img/project3_HDFreq.png' | relative_url }}" alt="HD Freq"><figcaption>project3_HDFreq.png</figcaption></figure>
-      <figure><img src="{{ '/assets/img/project3_HDFreqSex.png' | relative_url }}" alt="HD Freq by Sex"><figcaption>project3_HDFreqSex.png</figcaption></figure>
-      <figure><img src="{{ '/assets/img/project3_KNNCostCurve.png' | relative_url }}" alt="KNN cost"><figcaption>project3_KNNCostCurve.png</figcaption></figure>
-      <figure><img src="{{ '/assets/img/project3_KNNPRC.png' | relative_url }}" alt="KNN PRC"><figcaption>project3_KNNPRC.png</figcaption></figure>
-      <figure><img src="{{ '/assets/img/project3_LRCostCurve.png' | relative_url }}" alt="LR cost"><figcaption>project3_LRCostCurve.png</figcaption></figure>
-      <figure><img src="{{ '/assets/img/project3_LRPRC.png' | relative_url }}" alt="LR PRC"><figcaption>project3_LRPRC.png</figcaption></figure>
-      <figure><img src="{{ '/assets/img/project3_NBCostCurve.png' | relative_url }}" alt="NB cost"><figcaption>project3_NBCostCurve.png</figcaption></figure>
-      <figure><img src="{{ '/assets/img/project3_NBPRC.png' | relative_url }}" alt="NB PRC"><figcaption>project3_NBPRC.png</figcaption></figure>
+      <figure><img src="{{ '/assets/img/HeartAttack/project3_DesTreeCostCurve.png' | relative_url }}" alt="DT cost"><figcaption>project3_DesTreeCostCurve.png</figcaption></figure>
+      <figure><img src="{{ '/assets/img/HeartAttack/project3_DesTreePRC.png' | relative_url }}" alt="DT PRC"><figcaption>project3_DesTreePRC.png</figcaption></figure>
+      <figure><img src="{{ '/assets/img/HeartAttack/project3_HDFreq.png' | relative_url }}" alt="HD Freq"><figcaption>project3_HDFreq.png</figcaption></figure>
+      <figure><img src="{{ '/assets/img/HeartAttack/project3_HDFreqSex.png' | relative_url }}" alt="HD Freq by Sex"><figcaption>project3_HDFreqSex.png</figcaption></figure>
+      <figure><img src="{{ '/assets/img/HeartAttack/project3_KNNCostCurve.png' | relative_url }}" alt="KNN cost"><figcaption>project3_KNNCostCurve.png</figcaption></figure>
+      <figure><img src="{{ '/assets/img/HeartAttack/project3_KNNPRC.png' | relative_url }}" alt="KNN PRC"><figcaption>project3_KNNPRC.png</figcaption></figure>
+      <figure><img src="{{ '/assets/img/HeartAttack/project3_LRCostCurve.png' | relative_url }}" alt="LR cost"><figcaption>project3_LRCostCurve.png</figcaption></figure>
+      <figure><img src="{{ '/assets/img/HeartAttack/project3_LRPRC.png' | relative_url }}" alt="LR PRC"><figcaption>project3_LRPRC.png</figcaption></figure>
+      <figure><img src="{{ '/assets/HeartAttack/project3_NBCostCurve.png' | relative_url }}" alt="NB cost"><figcaption>project3_NBCostCurve.png</figcaption></figure>
+      <figure><img src="{{ '/assets/HeartAttack/project3_NBPRC.png' | relative_url }}" alt="NB PRC"><figcaption>project3_NBPRC.png</figcaption></figure>
     </div>
   </div>
 
