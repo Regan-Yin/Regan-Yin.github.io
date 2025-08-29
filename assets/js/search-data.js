@@ -72,11 +72,6 @@ ninja.data = [{
           description: "Health Care/Data Mining/Logistic Regression/Data Visualization/Machine Learning/",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-tbc",
-          title: 'TBC',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
             },},{
         id: 'social-email',
         title: 'email',
