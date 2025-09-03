@@ -96,11 +96,11 @@ category: work
     <!-- ONLY the two frequency charts here -->
     <div class="grid">
       <figure>
-        <img src="{{ '/assets/img/HeartAttack/project3_HDFreq.png' | relative_url }}" alt="Heart disease frequency">
+        <img src="{{ '/assets/img/HeartAttack/project3_HDFreq.png' | absolute_url }}" alt="Heart disease frequency">
         <figcaption>Heart disease frequency (overall).</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/HeartAttack/project3_HDFreqSex.png' | relative_url }}" alt="Heart disease frequency by sex">
+        <img src="{{ '/assets/img/HeartAttack/project3_HDFreqSex.png' | absolute_url }}" alt="Heart disease frequency by sex">
         <figcaption>Frequency by sex.</figcaption>
       </figure>
     </div>
@@ -123,19 +123,19 @@ category: work
     <!-- ONLY the four cost curves here -->
     <div class="grid">
       <figure>
-        <img src="{{ '/assets/img/HeartAttack/project3_LRCostCurve.png' | relative_url }}" alt="Logistic Regression cost curve">
+        <img src="{{ '/assets/img/HeartAttack/project3_LRCostCurve.png' | absolute_url }}" alt="Logistic Regression cost curve">
         <figcaption>LR: Cost vs threshold (optimal ≈ 0.08).</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/HeartAttack/project3_DesTreeCostCurve.png' | relative_url }}" alt="Decision Tree cost curve">
+        <img src="{{ '/assets/img/HeartAttack/project3_DesTreeCostCurve.png' | absolute_url }}" alt="Decision Tree cost curve">
         <figcaption>Decision Tree: Cost vs threshold (optimal ≈ 0.09).</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/HeartAttack/project3_NBCostCurve.png' | relative_url }}" alt="Naïve Bayes cost curve">
+        <img src="{{ '/assets/img/HeartAttack/project3_NBCostCurve.png' | absolute_url }}" alt="Naïve Bayes cost curve">
         <figcaption>Naïve Bayes: Cost vs threshold (optimal ≈ 0.08).</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/HeartAttack/project3_KNNCostCurve.png' | relative_url }}" alt="KNN cost curve">
+        <img src="{{ '/assets/img/HeartAttack/project3_KNNCostCurve.png' | absolute_url }}" alt="KNN cost curve">
         <figcaption>KNN: Cost vs threshold (optimal ≈ 0.01).</figcaption>
       </figure>
     </div>
@@ -157,19 +157,19 @@ category: work
     <!-- ONLY the four PRC plots here -->
     <div class="grid" style="margin-top:1rem">
       <figure>
-        <img src="{{ '/assets/img/HeartAttack/project3_LRPRC.png' | relative_url }}" alt="LR PRC">
+        <img src="{{ '/assets/img/HeartAttack/project3_LRPRC.png' | absolute_url }}" alt="LR PRC">
         <figcaption>Logistic Regression: Precision–Recall Curve.</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/HeartAttack/project3_DesTreePRC.png' | relative_url }}" alt="Decision Tree PRC">
+        <img src="{{ '/assets/img/HeartAttack/project3_DesTreePRC.png' | absolute_url }}" alt="Decision Tree PRC">
         <figcaption>Decision Tree: Precision–Recall Curve.</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/HeartAttack/project3_NBPRC.png' | relative_url }}" alt="Naïve Bayes PRC">
+        <img src="{{ '/assets/img/HeartAttack/project3_NBPRC.png' | absolute_url }}" alt="Naïve Bayes PRC">
         <figcaption>Naïve Bayes: Precision–Recall Curve.</figcaption>
       </figure>
       <figure>
-        <img src="{{ '/assets/img/HeartAttack/project3_KNNPRC.png' | relative_url }}" alt="KNN PRC">
+        <img src="{{ '/assets/img/HeartAttack/project3_KNNPRC.png' | absolute_url }}" alt="KNN PRC">
         <figcaption>KNN: Precision–Recall Curve.</figcaption>
       </figure>
     </div>
