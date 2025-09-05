@@ -34,9 +34,9 @@ category: work
   figure figcaption{color:var(--muted);font-size:.9rem;margin-top:.5rem;word-break:break-word}
 
   /* ---- Code blocks: scrollable, no overlay ---- */
-  .code{background:#0b0f19;color:#e8e8e8;border-radius:.6rem;padding:1rem 1.2rem;overflow:auto;font-size:.9rem;line-height:1.55;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+  /* .code{background:#0b0f19;color:#e8e8e8;border-radius:.6rem;padding:1rem 1.2rem;overflow:auto;font-size:.9rem;line-height:1.55;box-shadow:0 4px 16px rgba(0,0,0,.18)}
   pre{margin:0;white-space:pre;overflow:auto}
-  code{word-break:normal}
+  code{word-break:normal} */
 
   /* Simple table style */
   table{width:100%;border-collapse:collapse;font-size:.95rem}

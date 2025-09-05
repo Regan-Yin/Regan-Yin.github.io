@@ -119,6 +119,24 @@
       ]
     },
     {
+      "name": "Machine Learning",
+      "level": "",
+      "icon": "fa-brands fa-stack-overflow",
+      "keywords": [
+        "Natural Language Processing (NLP)",
+        "Time Series Analysis",
+        "TensorFlow",
+        "Automatic Speech Recognition (ASR)",
+        "Linear/Lasso Regression",
+        "Logistic/ Regression",
+        "Decision Tree",
+        "KNN",
+        "K-Means",
+        "Naive Bayes",
+        "Random Forest"
+      ]
+    },
+    {
       "name": "Business",
       "level": "",
       "icon": "fa-solid fa-rocket",
@@ -130,6 +148,20 @@
         "Time Management",
         "Multi-tasking",
         "Project Management"
+      ]
+    },
+    {
+      "name": "Data Analytics",
+      "level": "",
+      "icon": "fa-solid fa-chart-diagram",
+      "keywords": [
+        "MS Excel",
+        "pandas", 
+        "numpy",
+        "MATLAB",
+        "sklearn",
+        "scipy",
+        "Jupyter Notebook"
       ]
     },
     {
@@ -153,20 +185,6 @@
       ]
     },
     {
-      "name": "Data Analytics",
-      "level": "",
-      "icon": "fa-solid fa-chart-diagram",
-      "keywords": [
-        "MS Excel",
-        "pandas", 
-        "numpy",
-        "MATLAB",
-        "sklearn",
-        "scipy",
-        "Jupyter Notebook"
-      ]
-    },
-    {
       "name": "Data Visualization",
       "level": "",
       "icon": "fa-solid fa-chart-column",
@@ -174,8 +192,7 @@
         "Tableau",
         "Power BI",
         "matplotlib", 
-        "seaborn",
-        "Photoshop"
+        "seaborn"
       ]
     },
     {
@@ -191,8 +208,8 @@
         "HTML/CSS"
       ]
     },
-    {
-      "name": "Machine Learning",
+        {
+      "name": "Statistics",
       "level": "",
       "icon": "fa-brands fa-stack-overflow",
       "keywords": [
