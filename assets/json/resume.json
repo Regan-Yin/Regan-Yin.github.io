@@ -29,9 +29,9 @@
       "startDate": "2022-07",
       "endDate": "2022-08",
       "highlights": [
-        "Designed a real-time monitoring dashboard connected to the exchange data server for the MDs, providing actionable insights on market momentum and enabling more informed decision-making and strategy development.",
-        "Developed the team’s first client monitoring system to efficiently manage pipelines and client relationships, integrating data visualization for streamlined client services and engagement tracking.",
-        "Conducted comprehensive analyses of the Mainland A-share and GDR markets using Bloomberg and Wind terminals, preparing data-driven pitches to the Listing Division for enhancing listing rules and attracting potential issuers.",
+        "Designed and deployed a real-time market monitoring dashboard connected to internal exchange data servers, tracking 10+ market indicators and supporting MD’s decision-making on market momentum and issuer strategies.",
+        "Built the team’s first client monitoring and pipeline system, improving issuer tracking efficiency by ~30% and enabling data-driven prioritization of 50+ active issuer relationships through visualization and KPI reporting.",
+        "Conducted cross-market analysis on Mainland A-share and GDR markets using Bloomberg and Wind, producing 3 data-backed proposals adopted by the Listing Division to refine listing strategies and issuer outreach.",
         "Arranged high-profile meetings with HKEX’s CEO and prepared briefing notes for management, facilitating better understanding of issuers’ backgrounds and listing needs in Hong Kong."
       ]
     },
@@ -42,9 +42,9 @@
       "startDate": "2021-12",
       "endDate": "2022-01",
       "highlights": [
-        "Conducted analysis on integrating NLP techniques for financial news sentiment analysis, identifying gaps in traditional forecasting practices.",
-        "Analysed SPACs under the new listing rules in Hong Kong; Reported the rules & procedures, current situation of the global SPAC market and the development prospects of Hong Kong SPACs to the management committee.",
-        "Initiated a data-driven outlook for the semiconductor industry, emphasizing emerging trends and analytics methodologies for market forecasting."
+        "Applied NLP-based sentiment analysis techniques to financial news datasets, identifying leading sentiment indicators that complemented traditional fundamental forecasts and improved short-term market signal detection.",
+        "Analyzed SPAC listings under new Hong Kong regulatory frameworks, synthesizing market data, regulatory requirements, and global SPAC trends into a management-level briefing used for strategic positioning discussions.",
+        "Developed a data-driven outlook for the semiconductor sector, integrating macroeconomic indicators, industry metrics, and scenario analysis to support investment research and forecasting decisions."
       ]
     }
   ],
@@ -79,7 +79,7 @@
     {
       "institution": "The Hong Kong University of Science and Technology (HKUST)",
       "location": "Hong Kong",
-      "url": "https://en.xmu.edu.cn/main.htm",
+      "url": "https://hkust.edu.hk/",
       "area": "Information Systems and Finance",
       "studyType": "Bachelor of Business Administration",
       "startDate": "2021-09",
