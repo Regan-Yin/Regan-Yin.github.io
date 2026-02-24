@@ -3,7 +3,7 @@ layout: page
 title: Detecting Insider Signals - Multi-Modal Analysis of Executive Behavior in Earnings Calls
 description: NLP/FinBert/WhisperX/Business Analysis/Big Data/Machine Learning
 img: assets/img/InsiderTrading.png
-importance: 1
+importance: 2
 category: work
 related_publications: false
 ---

@@ -3,7 +3,7 @@ layout: page
 title: U.S. House Election Data Visualisation Project
 description: US Election/Data Analytics/Data Visualisation/Web Scrapping/Web App with Dash/Beautiful Soup/Selenium
 img: assets/img/US_Election/us-house.jpg
-importance: 2
+importance: 3
 category: work
 related_publications: false
 ---
