@@ -72,6 +72,11 @@ ninja.data = [{
           description: "Health Care/Data Mining/Logistic Regression/Data Visualization/Machine Learning/",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-safety-incident-amp-near-miss-pattern-mining-methanex-hackathon",
+          title: 'Safety Incident &amp;amp; Near-Miss Pattern Mining — Methanex Hackathon',
+          description: "NLP/Clustering/Google Cloud (Vertex AI)/RAG/Gemini/Dash/Plotly/Full-Stack Dashboard",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
             },},{
         id: 'social-email',
         title: 'email',
