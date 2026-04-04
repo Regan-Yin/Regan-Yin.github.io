@@ -77,6 +77,11 @@ ninja.data = [{
           description: "NLP/Clustering/Google Cloud (Vertex AI)/RAG/Gemini/Dash/Plotly/Full-Stack Dashboard",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
+            },},{id: "projects-jobtracker-offer-kitty-local-first-macos-job-application-tracker",
+          title: 'JobTracker Offer Kitty - Local-First macOS Job Application Tracker',
+          description: "SwiftUI/macOS/SQLite/GRDB/ZIPFoundation/Local-first desktop product engineering",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_project/";
             },},{
         id: 'social-email',
         title: 'email',
