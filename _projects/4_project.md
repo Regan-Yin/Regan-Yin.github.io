@@ -2,7 +2,7 @@
 layout: page
 title: "Safety Incident & Near-Miss Pattern Mining — Methanex Hackathon"
 description: TF-IDF RAG/Ollama Cloud/DSPy + GEPA Prompt Optimization/Dash/Plotly/Cloud Run/Full-Stack Dashboard
-img: assets/img/Methanex/methanex_safety_mining.png
+img: assets/img/Methanex/hackathon_team_presentation.jpeg
 importance: 1
 category: work
 related_publications: false
