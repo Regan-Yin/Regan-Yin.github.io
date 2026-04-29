@@ -3,7 +3,7 @@ layout: page
 title: JobTracker Offer Kitty - Local-First macOS Job Application Tracker
 description: SwiftUI/macOS/SQLite/GRDB/ZIPFoundation/Local-first desktop product engineering
 img: assets/img/JobTracker/jobtracker_offer_kitty_icon.png
-importance: 0
+importance: 1
 category: work
 related_publications: false
 ---
