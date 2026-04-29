@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Agentic Movie Recommender — BAMS 521
+title: Agentic Movie Recommender
 description: Agentic AI/RAG/Ollama Cloud/DSPy/GEPA/TMDB/Python — preference-first recommendations with strict latency and output contracts
 img: assets/img/movie_recommender/movie-recommender.png
 importance: -1
