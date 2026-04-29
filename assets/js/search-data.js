@@ -82,8 +82,8 @@ ninja.data = [{
           description: "SwiftUI/macOS/SQLite/GRDB/ZIPFoundation/Local-first desktop product engineering",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-agentic-movie-recommender-bams-521",
-          title: 'Agentic Movie Recommender — BAMS 521',
+            },},{id: "projects-agentic-movie-recommender",
+          title: 'Agentic Movie Recommender',
           description: "Agentic AI/RAG/Ollama Cloud/DSPy/GEPA/TMDB/Python — preference-first recommendations with strict latency and output contracts",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
