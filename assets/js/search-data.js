@@ -74,7 +74,7 @@ ninja.data = [{
               window.location.href = "/projects/3_project/";
             },},{id: "projects-safety-incident-amp-near-miss-pattern-mining-methanex-hackathon",
           title: 'Safety Incident &amp;amp; Near-Miss Pattern Mining — Methanex Hackathon',
-          description: "NLP/Clustering/Google Cloud (Vertex AI)/RAG/Gemini/Dash/Plotly/Full-Stack Dashboard",
+          description: "TF-IDF RAG/Ollama Cloud/DSPy + GEPA Prompt Optimization/Dash/Plotly/Cloud Run/Full-Stack Dashboard",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-jobtracker-offer-kitty-local-first-macos-job-application-tracker",
