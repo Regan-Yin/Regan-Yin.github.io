@@ -87,6 +87,11 @@ ninja.data = [{
           description: "Agentic AI/RAG/Ollama Cloud/DSPy/GEPA/TMDB/Python — preference-first recommendations with strict latency and output contracts",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
+            },},{id: "projects-answer-sheet-toolkit-keyboard-first-macos-answer-sheet-app",
+          title: 'Answer Sheet Toolkit - Keyboard-First macOS Answer Sheet App',
+          description: "SwiftUI/macOS/MVVM/Keyboard-first grid/Mock exam timer/XLSX export/Local-first desktop product engineering",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_project/";
             },},{
         id: 'social-email',
         title: 'email',
